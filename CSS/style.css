@@ -1,0 +1,448 @@
+body {     
+    font-family: Arial, sans-serif;
+    background-color: white;
+    text-align: center;
+    padding-top: 50px;
+    width: 100%;
+    background-color: #E8E8E8;
+}
+
+img {      /*logo-Img*/
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+fieldset {     /* box-boder jem k login ma */
+    border: 2px dotted gray;
+    margin: 0 20%;
+
+    background-color: white;
+}
+
+legend {   /*login name , regis. name*/
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+label {  /*  Username , password, Conform pass.. , ni fix jgya */
+   margin: 15px 5px 10px ;
+   font-weight: bold;
+   color: black;
+
+}
+
+input::placeholder{ 
+    font-weight: lighter;   /* box ni andar text aacho */
+}
+
+input[type="text"], input[type="password"] {  /*  textarea or passwor field ni size  */
+    width: 50%;
+    padding: 10px;
+    margin: 5px 5px 10px 5px;
+    border-radius: 4px;
+    font-size: 16px;
+    border-radius: 0;
+    border: 2px solid #606060;
+    color: black;
+    font-weight:bold
+}
+
+#user{ /*    login and register ma text pehla ni jagya */
+    padding-left: 130px;
+}
+
+button  {  /* overall */
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 3px;
+    margin-top: 15px;
+    border-radius: 0; 
+}
+
+#but_gray{  /* color gray for but.*/
+    background-color: #808080;
+}
+
+#password_Register{  /* register ma Conform Password na box ne line ma lavva */  
+    margin-left: -60px;
+}
+
+#login{  /**/
+    text-decoration: none;
+    color: blue;
+}
+
+.but_new_req_1, .but_new_req_2{  /*  friends ni ander ,Accept and rej., same but. pn only add radius*/
+    border-radius: 5px;
+    background-color: #808080;
+
+}
+
+p{  /**/
+    font-size:25px;
+}
+
+/* /////////////////////////// Profile //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////*/
+
+#maincontaner{  /**/
+    display: flex;
+    margin-top: 20px;
+}
+
+#profile_text{  /**/
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: white;
+}
+
+a{  /**/
+    text-decoration: none;
+}
+
+#title{  /**/
+   justify-items: start;
+}
+
+#back_link{  /**/
+    color: red;
+}
+#further_link{  /**/
+    color: blue;
+}
+
+#profile_text p {   /**/
+    padding-left:20px ;
+    text-align: left;
+    justify-self: start;
+    font-size: 30px;
+}
+
+#profile_img{  /**/
+    margin-right: 40px;
+    height: 100%;
+    width: 100%;
+    border-radius: 0%; /* upar*/
+    }
+
+#ask{    /**/
+    margin-top: 40px;
+    text-align: left;
+    justify-self: start;
+    font-size: 30px;
+    line-height: 0%;
+}
+
+#ask_p{  /**/
+    font-weight: bold;
+}
+
+/* /////////////////////////// Freinds //////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////*/
+
+#box{   /**/
+    border: 2px solid #DCDCDC;
+    border-radius: 5px;
+    background-color: white;
+}
+
+ul{   /**/
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul li {    /**/
+    display: flex;
+}
+
+ul li a, .chat-message{    /**/
+    margin: 10px 0px;
+    margin-left: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    display: flex;   /* name ane number vache jgya mate    */
+    justify-content: space-between; /* name ane number vache jgya mate*/
+    width: 100%;
+}
+
+.count, .time{    /**/
+    background-color: #007bff;
+    color: white;
+    padding: 2px 8px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+hr {    /**/
+    border: none;
+    border-top: 1px dashed gray; /* Dashed line with light grey color */
+    margin: 20px 0; /* Space upar niche  */
+}
+
+#freind_list{    /**/
+   padding-left:20px ;
+}
+
+
+
+#add_list{    /**/
+    display: flex;
+    align-items: start;
+}
+#enter-text{     /**/
+width: 83%;
+}
+
+.but_style{     /**/
+    background-color: #808080	;
+    width: 10%;
+}
+
+#but_add{      /**/
+    margin-right: 10px;
+    margin-left: 40px;
+    border-radius: 5px;
+}
+
+/*/////////////////////// Chat //////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////*/
+
+.time{  /*  time in Chat */
+    color: #989494	; 
+    background-color: white;
+    font-size: 0.9em;
+    margin-right:20px ;
+}
+
+#but_send{        /* send but. in Chat, */
+    margin-right: 0px;
+    margin-left: 30px;
+    border-radius: 0px;
+    width: 13%;
+}
+
+
+/*/////////////////Setting//////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////*/
+
+#setting_box{ /*main box ni size */
+    width: 97.5%;
+    margin: 0 5px; 
+}
+
+ #lastname ,#Firstname { /* firstname and lastname ma box ni size*/
+    width: 220px;
+    height: 30px; 
+}
+
+#COT{ /* Coffie or tea ma Box ni size mate */
+    width: 228px;
+    height: 30px; 
+    margin-right: 17px;  /* box ne aek ubhi-line ma lavva */
+}
+
+#base_data_box{ /* firstname and lastname ni vacche jagya mukva*/ 
+    line-height: 50px;
+}
+
+#comment{ /* Comment box ne size aapva*/
+    width: 100%;
+    height:200px;
+}
+
+#layout #setting_box{ /* radio button na text ne left ma rakhva*/
+   margin: 0 5px;        /* inheritance rokva */
+         /* inheritance rokva */
+   text-align: left;
+   line-height: 30px;
+   padding-bottom: 20px; 
+}
+
+input[type="radio"]{    /* radio button ne motu karva*/
+   height: 20px;  
+   width: 20px;  
+}
+
+/* ////////////////////////////// Animation//////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////*/
+button:hover{
+    border-right: 2px solid  #003e80;
+    border-bottom: 2px solid  #003e80;
+    border-radius: 10px;
+}
+
+#but_gray:hover{
+    border-right: 2px solid  black;
+    border-bottom: 2px solid  black;
+}
+
+.but_new_req_1:hover, .but_style:hover{
+    background-color: #007bff;
+}
+
+.but_new_req_2:hover{
+    background-color: red;
+}
+
+a:hover,#login:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+
+/*///////////////////////////////////Responsiv//////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////*/
+
+
+@media (max-width:932px){
+
+    fieldset {     /* box-boder jem k login ma */
+        margin-left: 0px;
+        margin-right: 15px;  
+       
+    }
+    #user{ /*    login and register ma text pehla ni jagya */
+        padding-left: 30px;       
+    }
+    label {  /*  Username , password, Conform pass.. , ni fix jgya */ 
+        padding-left: 35px  
+     }
+
+#but_con{  /*but. ne upar niche lavva */
+   display: flex;
+   flex-direction: column-reverse; /* Stack buttons vertically */
+   align-items: center;    /* Center align buttons */
+   gap: 10px; 
+}
+
+button {
+    width: 150px;            /* Set button width */
+    padding: 10px;           /* Add padding for better appearance */
+  }
+
+#enter-text{
+    width: 57%;
+    margin: 0;
+    
+}
+
+
+
+#but_add,#but_send{
+    width: 40%;
+    background-color: #808080	;
+    margin-top: 2px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+p{
+    font-size:20px;
+}
+
+#maincontaner{  /**/
+    display: block;
+}
+
+#profile_img{  /**/
+    margin-right: 50px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    height: 250px;
+    width: 50%;
+    }
+
+#profile_text{  /**/
+    width: 90%;
+}
+
+#setting_box{ /*main box ni size */
+    width: 88%;    /*setting ma main box ni size*/
+}
+
+#profile_text p {   /**/
+        padding-left:5px ;
+        padding-right: 5px;
+        text-align: left;
+        justify-self: start;
+        font-size: 20px;
+    }
+
+#setting_box label{
+        margin: 0 0;
+        padding: 0 0;      
+    }
+
+  
+
+}
+
+@media (max-width:402px){
+    fieldset {     /* box-boder jem k login ma */
+        margin: 0 15px;  
+    }
+    input[type="text"], input[type="password"] {  /*  textarea or passwor field ni size  */
+        width: 40%;
+        padding: 5px;
+        margin: 5px -15px 10px 5px;
+        border-radius: 4px;
+        font-size: 16px;
+        border-radius: 0;
+        border: 2px solid #606060;
+        color: black;
+        font-weight:bold
+    }
+}
+
+
+@media (min-width: 933px) and (max-width: 1024px) { 
+  
+    #user{ /*    login and register ma text pehla ni jagya */
+        padding-left: 20px;
+    }
+
+    #enter-text{
+        width: 77%;  
+    }
+    
+    #but_add,#but_send{
+        width: 20%;   
+    }
+}
+
+
+
+
+
+
