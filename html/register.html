@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>Registrieren</title>
+  </head>
+  <body>
+    <img src="user.png" alt="" width="40px" height="40px" />
+    <h1>
+      <caption>
+        Register yourself
+      </caption>
+    </h1>
+
+    <form id="registerForm" onsubmit="return validateForm(event)">
+      <fieldset>
+        <legend>Register</legend>
+
+        <label for="Username">Username</label>
+        <input
+          type="text"
+          name="Username"
+          placeholder="Username"
+          required
+          id="regUsername"
+          onkeyup="pruefe(this)"
+        />
+
+        <br />
+
+        <label for="Password">Password</label>
+        <input
+          type="Password"
+          name="Password"
+          placeholder="Password"
+          required
+          id="regPassword"
+          onkeyup="pruefePassword(this)"
+        /><br />
+
+        <!-- <div id="Check-results">
+     <span id="upperCase" >
+           Contain Upper Letter</span> <br>
+        <span id="lowerCase">
+            <i class="bi bi-shield-x"></i>Contain Lower Letter</span><br>
+            <span id="min3letter" >
+                <i class="bi bi-shield-x"></i>Min. 3 Letter</span>
+            </div> -->
+
+        <br />
+        <label for="Password" id="password_Register"> Confirm Password</label>
+        <input
+          type="Password"
+          name="Password"
+          placeholder=" Confirm Password"
+          required
+          id="confirmPassword"
+          onkeyup="pruefeConfirmPassword(this)"
+        />
+      </fieldset>
+
+      <div id="but_con">
+        <a href="login.php">
+          <button type="button" id="but_gray">Cancle</button></a
+        >
+        <button formaction="friends.php">Create Account</button>
+      </div>
+    </form>
+    <script 
+    src="../JS/main.js"></script>
+    <script src="../JS/register.js"></script>
+  </body>
+</html>

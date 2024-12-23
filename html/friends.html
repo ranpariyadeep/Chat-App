@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <title>Freundsliste</title>
+</head>
+<body>
+<form action="">
+<div  id="title" >
+   <h1   > <caption >Friends</caption></h1>
+
+   <a href="logout.php"  id="further_link" > &#60; Logout</a>
+   |
+   <a href="settings.php"  id="further_link" >Settings</a>
+
+</div>
+
+
+   <hr>
+   <div id="box"> 
+   <ul id="chat_list">
+       <!-- <li><a href="chat.php">Tom<span class="count">3</span></a></li>
+       <li><a href="chat.php">Marvin<span class="count">1</span></a></li>
+       <li><a href="chat.php">Tick</a></li>
+       <li><a href="chat.php">Trick</a></li> -->
+   </ul>
+   </div>
+   <hr>
+
+<div id="title">
+   <h1>New Requests</h1>
+   <ul id="freind_req_accept">
+    <!-- <p id="freind_req_list"> 1. Friend request from <span id="ask_p">Track</span> 
+   <a href=""><button type="button"  class="but_new_req_1" >Accept</button></a>
+  <a href=""><button type="reset"  class="but_new_req_2">Reject</button></a>  </p> -->
+  
+</ul>
+</div>
+
+   <hr>
+<div id="add_list">
+   <!-- <input id="search_enter-text" type="text" placeholder="Add Friend to List" required>
+   <button id="but_add" class="but_style">Add</button> -->
+
+   <input 
+           placeholder="Add Friend to List" 
+          name="friendRequestName"
+           id="friend-request-name" 
+           list="friend-selector"
+           oninput="onFriendInput()">
+
+<datalist id= "friend-selector">
+
+<!-- <option>Tom</option>
+<option>Jerry</option> -->    
+
+<!-- weitere Einträge -->
+
+</datalist>
+
+<input type="button" value="Add" class="friendListAddButton but_style" id="but_add"/>
+
+<!-- <button type=
+"button" id="but_add" class="but_style" >Add</button> -->
+</div>
+
+</form>
+<script 
+    src="../JS/main.js"></script>
+<script src="../JS/friends.js"> </script>
+</body>
+</html>

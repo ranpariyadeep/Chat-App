@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+
+    <title>Nutzerprofil-Einstellungen</title>
+</head>
+<body>
+<div  id="title">
+    <h1 >Profile Settings</h1>
+</div>
+    
+    <form>
+        <div >
+            <fieldset  id="setting_box" >
+          <legend> <caption>Base Data</caption></legend>
+          <div id="base_data_box">
+            <label for="Firstname">First Name</label>
+            <input id="Firstname" placeholder="Your name " required><br>
+          </div>
+           <div id="base_data_box">
+            <label for="lastname">Last Name</label>
+            <input id="lastname" placeholder="Your surname" required><br>
+           </div>
+
+
+           <div id="base_data_box">
+            <label for="COT"  >Coffe or Tea?</label>
+            <select id="COT" name="COT">
+                <option value="Coffe">Coffe</option>
+                <option value="Tea">Tea</option>
+                <option value="Neither nor">Neither nor</option>
+            </select>
+           </div>
+        </fieldset>
+        </div>
+       
+        <div>
+        <fieldset id="setting_box">
+       
+        <legend><caption>Tell Something About You</caption></legend> 
+        <textarea  id="comment"placeholder="Leave a comment here"></textarea>
+     
+    </fieldset>
+</div>
+
+       <div id="layout">
+        <fieldset id="setting_box">
+      <legend><caption>Pfrefered chat Layout</caption></legend> 
+        <input type="radio" name="Layout" id="Layout">
+        <label for="Layout" required>Username and message in one line</label><br>
+        <input type="radio" name="Layout" id="Layout">
+        <label for="Layout" required >Username and message in separated lines</label>
+        </fieldset>
+       </div>
+        
+
+
+       <div id="but_con">
+      <a href="friends.php"> <button type="button" id="but_gray">Cancle</button></a>
+        <button type="submit" formaction="settings.php" >Save</button>
+
+    </div>
+
+        </form>
+         
+      
+        
+    
+</body>
+</html>

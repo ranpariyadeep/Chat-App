@@ -1,0 +1,7 @@
+a{
+  color: black !important;
+}
+.list-group-item{
+  margin-left: -20px !important;
+  padding: -40px !important;
+}

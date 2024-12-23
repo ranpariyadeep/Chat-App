@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Chat-Ansicht</title>
+</head>
+<body>
+    <form action="">
+
+        <div id="title">
+    <h1 id="chatHeader">Chat mit Tom</h1>
+    <a href="friends.php" id="further_link"> &#60; Back </a> |
+    <a href="profile.php" id="further_link"> Profil </a> |
+    <a href="friends.php" id="back_link">Remove Friend</a>
+        </div>
+
+<hr>
+
+    <div id="box">
+        <p class="chat-message">
+          <span> Tom: Hallo, Welt!</span> 
+           <span class="time">19:43:01</span>
+        </p>
+        <p class="chat-message">
+            Jerry: Wie gehts?
+            <span class="time">19:57:28</span>
+        </p>
+    </div>
+
+<hr>
+        <div id="add_list">
+        <input type="text" id="search_enter-text" name="message" placeholder="New Message" required>
+
+
+        <button type="button"  id="but_send" class="but_style" onclick="sendMessages()"> Send </button>
+    </div>
+
+    </form>
+    <script 
+    src="../JS/main.js"></script>
+    <script 
+    src="../JS/chat.js"></script>
+</body>
+</html>
